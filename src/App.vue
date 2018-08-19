@@ -1,16 +1,16 @@
 <template>
-  <v-app>
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <v-app dark>
+    <Navbar />
   </v-app>
 </template>
 
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue';
+import Navbar from './components/Navbar.vue';
 
 @Component({
   components: {
-    HelloWorld
+    Navbar
   }
 })
 export default class App extends Vue {}
