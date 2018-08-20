@@ -1,6 +1,6 @@
 <template>
   <v-layout row justify-center>
-    <v-dialog :value="loginIsActive" persistent max-width="500px">
+    <v-dialog :value="isLoginActive" persistent max-width="500px">
       <v-card>
         <v-card-title>
           <span class="headline">User Login</span>
@@ -20,8 +20,8 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn color="blue darken-1" flat @click.native="dialog = false">Close</v-btn>
-          <v-btn color="accent" @click.native="dialog = false">Submit</v-btn>
+          <v-btn color="blue darken-1" flat @click.native="closeLoginForm">Close</v-btn>
+          <v-btn color="accent" @click.native="handleLogin">Submit</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -30,10 +30,20 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Getter, Action, Mutation } from 'vuex-class';
 
 @Component
 export default class LoginForm extends Vue {
-  private loginIsActive = false;
+  @Action('callUpdateIsLoginActive') callUpdateIsLoginActive: any;
+  @Getter('getIsLoginActive') isLoginActive!: boolean;
+
+  closeLoginForm() {
+    this.callUpdateIsLoginActive(false);
+  }
+
+  handleLogin() {
+    // Login logic
+  }
 }
 </script>
 

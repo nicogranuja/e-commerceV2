@@ -1,5 +1,5 @@
 <template>
-  <v-btn medium color="accent">
+  <v-btn medium color="accent" @click="openLoginForm">
     Login
     <v-icon right>account_box</v-icon>
   </v-btn>
@@ -7,10 +7,15 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Getter, Action, Mutation } from 'vuex-class';
 
 @Component
 export default class Login extends Vue {
-  private dialog: boolean = false;
+  @Action('callUpdateIsLoginActive') callUpdateIsLoginActive: any;
+
+  openLoginForm() {
+    this.callUpdateIsLoginActive(true);
+  }
 }
 </script>
 
