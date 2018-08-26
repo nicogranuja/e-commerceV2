@@ -1,7 +1,7 @@
 import { Module, VuexModule, Mutation, Action } from 'vuex-module-decorators';
 
 @Module
-export default class Views extends VuexModule {
+export default class formsVisibility extends VuexModule {
   isLoginFormActive: boolean = false;
   isRegisterFormActive: boolean = false;
   isShoppingCartFormActive: boolean = false;
