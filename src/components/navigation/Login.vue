@@ -11,10 +11,10 @@ import { Getter, Action, Mutation } from 'vuex-class';
 
 @Component
 export default class Login extends Vue {
-  @Action('callUpdateIsLoginActive') callUpdateIsLoginActive: any;
+  @Action('callUpdateIsLoginFormActive') callUpdateIsLoginFormActive: any;
 
   openLoginForm() {
-    this.callUpdateIsLoginActive(true);
+    this.callUpdateIsLoginFormActive(true);
   }
 }
 </script>

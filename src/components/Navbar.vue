@@ -2,7 +2,7 @@
     <v-toolbar>
       <v-toolbar-title>Swagoo V2</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-toolbar-items class="hidden-sm-and-down">
+      <v-toolbar-items class="hidden-sm-and-down toolbar">
         <Login />
         <Register />
         <v-btn flat>Link Three</v-btn>
@@ -25,5 +25,11 @@ export default class Navbar extends Vue {}
 </script>
 
 <style lang="scss" scoped>
+.toolbar {
+  height: 80%;
+  * {
+    margin: 5px 5px 0 5px;
+  }
+}
 </style>
 

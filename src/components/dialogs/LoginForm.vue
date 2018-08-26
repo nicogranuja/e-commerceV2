@@ -1,6 +1,6 @@
 <template>
   <v-layout row justify-center>
-    <v-dialog :value="isLoginActive" persistent max-width="500px">
+    <v-dialog :value="isLoginFormActive" persistent max-width="500px">
       <v-card>
         <v-card-title>
           <span class="headline">User Login</span>
@@ -34,11 +34,11 @@ import { Getter, Action, Mutation } from 'vuex-class';
 
 @Component
 export default class LoginForm extends Vue {
-  @Action('callUpdateIsLoginActive') callUpdateIsLoginActive: any;
-  @Getter('getIsLoginActive') isLoginActive!: boolean;
+  @Action('callUpdateIsLoginFormActive') callUpdateIsLoginFormActive: any;
+  @Getter('getIsLoginFormActive') isLoginFormActive!: boolean;
 
   closeLoginForm() {
-    this.callUpdateIsLoginActive(false);
+    this.callUpdateIsLoginFormActive(false);
   }
 
   handleLogin() {
