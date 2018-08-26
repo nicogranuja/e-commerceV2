@@ -46,11 +46,11 @@ import { Getter, Action, Mutation } from 'vuex-class';
 
 @Component
 export default class LoginForm extends Vue {
-  @Action('callUpdateRegisterFormIsActive') callUpdateRegisterFormIsActive: any;
+  @Action('callUpdateIsRegisterFormActive') callUpdateIsRegisterFormActive: any;
   @Getter('getIsRegisterFormActive') isRegisterFormActive!: boolean;
 
   closeRegisterForm() {
-    this.callUpdateRegisterFormIsActive(false);
+    this.callUpdateIsRegisterFormActive(false);
   }
 
   handleRegistration() {

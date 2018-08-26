@@ -11,10 +11,10 @@ import { Getter, Action, Mutation } from 'vuex-class';
 
 @Component
 export default class Register extends Vue {
-  @Action('callUpdateRegisterFormIsActive') callUpdateRegisterFormIsActive: any;
+  @Action('callUpdateIsRegisterFormActive') callUpdateIsRegisterFormActive: any;
 
   openRegisterForm() {
-    this.callUpdateRegisterFormIsActive(true);
+    this.callUpdateIsRegisterFormActive(true);
   }
 }
 </script>
