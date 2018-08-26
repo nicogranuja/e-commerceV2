@@ -6,7 +6,7 @@
   <v-content>
     <Dialogs />
     <v-container fluid>
-      <!-- Main display info -->
+      <Games />
     </v-container>
   </v-content>
   <v-footer app></v-footer>
@@ -19,13 +19,15 @@ import Navbar from './components/Navbar.vue';
 import Dialogs from './components/Dialogs.vue';
 import Categories from './components/Categories.vue';
 import Genres from './components/Genres.vue';
+import Games from './components/Games.vue';
 
 @Component({
   components: {
     Navbar,
     Dialogs,
     Categories,
-    Genres
+    Genres,
+    Games
   }
 })
 export default class App extends Vue {}

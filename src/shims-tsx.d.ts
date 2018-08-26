@@ -10,4 +10,14 @@ declare global {
       [elem: string]: any;
     }
   }
+  interface Game {
+    id: number;
+    title: string;
+    description: string;
+    console: string;
+    price: number;
+    genre: string;
+    url: string;
+    youtubeId: string;
+  }
 }
