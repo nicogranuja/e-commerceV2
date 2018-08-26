@@ -1,14 +1,14 @@
 <template>
-  <v-app dark>
-    <Navbar />
-    <v-content>
-      <Dialogs />
-      <v-container fluid>
-        <!-- Main display info -->
-      </v-container>
-    </v-content>
-    <v-footer app></v-footer>
-  </v-app>
+<v-app dark>
+  <Navbar />
+  <v-content>
+    <Dialogs />
+    <v-container fluid>
+      <!-- Main display info -->
+    </v-container>
+  </v-content>
+  <v-footer app></v-footer>
+</v-app>
 </template>
 
 <script lang="ts">

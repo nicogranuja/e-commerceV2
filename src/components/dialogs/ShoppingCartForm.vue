@@ -1,10 +1,10 @@
 <template>
-  <v-layout row justify-center>
-    <v-dialog :value="isShoppingFormActive" persistent max-width="500px">
-      Shopping Cart
-      <v-btn @click="closeShoppingCartForm">Close</v-btn>
-    </v-dialog>
-  </v-layout>
+<v-layout row justify-center>
+  <v-dialog :value="isShoppingFormActive" persistent max-width="500px">
+    Shopping Cart
+    <v-btn @click="closeShoppingCartForm">Close</v-btn>
+  </v-dialog>
+</v-layout>
 </template>
 
 <script lang="ts">

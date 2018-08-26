@@ -1,10 +1,10 @@
 <template>
-  <v-layout row justify-center>
-    <v-dialog :value="isFAQFormActive" persistent max-width="500px">
-      FAQ
-      <v-btn @click="closeFAQForm">Close</v-btn>
-    </v-dialog>
-  </v-layout>
+<v-layout row justify-center>
+  <v-dialog :value="isFAQFormActive" persistent max-width="500px">
+    FAQ
+    <v-btn @click="closeFAQForm">Close</v-btn>
+  </v-dialog>
+</v-layout>
 </template>
 
 <script lang="ts">
