@@ -1,8 +1,8 @@
 <template>
-  <v-btn medium color="accent" @click="openLoginForm">
-    Login
-    <v-icon right>account_box</v-icon>
-  </v-btn>
+<v-btn small color="accent" @click="openLoginForm">
+  Login
+  <v-icon right>account_box</v-icon>
+</v-btn>
 </template>
 
 <script lang="ts">

@@ -4,7 +4,7 @@
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <Login />
-        <v-btn flat>Link Two</v-btn>
+        <Register />
         <v-btn flat>Link Three</v-btn>
       </v-toolbar-items>
       </v-toolbar>
@@ -13,10 +13,12 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import Login from './navigation/Login.vue';
+import Register from './navigation/Register.vue';
 
 @Component({
   components: {
-    Login
+    Login,
+    Register
   }
 })
 export default class Navbar extends Vue {}
