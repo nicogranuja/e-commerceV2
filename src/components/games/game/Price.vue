@@ -18,7 +18,7 @@ export default class Price extends Vue {
   }
 
   get centsPriceValue(): string {
-    let price = this.price.toString();
+    const price = this.price.toString();
     return price.toString().slice(3, price.length);
   }
 }

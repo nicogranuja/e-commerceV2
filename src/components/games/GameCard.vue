@@ -7,8 +7,7 @@
   <Price :price="game.price" />
 
   <Actions 
-    :description="game.description" 
-    :youtubeId="game.youtubeId"
+    :game="game" 
     :index="index"
   />
 </v-card>
