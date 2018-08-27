@@ -1,10 +1,10 @@
 <template>
 <div class="card-actions">
-  <v-btn color="primary" class="btn">
+  <v-btn color="accent" class="btn">
     More
     <v-icon right>info</v-icon>
   </v-btn>
-  <v-btn color="primary">
+  <v-btn color="accent">
     Cart
     <v-icon right>add_shopping_cart</v-icon>
   </v-btn>
@@ -25,7 +25,7 @@ export default class Actions extends Vue {
 <style scoped lang="scss">
 .card-actions {
   position: absolute;
-  top: 88%;
-  left: 4%;
+  top: 90%;
+  left: 3.7%;
 }
 </style>

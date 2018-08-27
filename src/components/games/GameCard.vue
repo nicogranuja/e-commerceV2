@@ -4,7 +4,7 @@
 
   <Title :title="game.title" />
 
-  <div> Price ${{ game.price }}</div>
+  <Price :price="game.price" />
 
   <Actions 
     :description="game.description" 
@@ -19,12 +19,14 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 import Media from './game/Media.vue';
 import Title from './game/Title.vue';
 import Actions from './game/Actions.vue';
+import Price from './game/Price.vue';
 
 @Component({
   components: {
     Media,
     Title,
-    Actions
+    Actions,
+    Price
   }
 })
 export default class GameCard extends Vue {
@@ -35,6 +37,6 @@ export default class GameCard extends Vue {
 
 <style scoped lang="scss">
 .game-card {
-  height: 600px;
+  height: 500px;
 }
 </style>

@@ -1,9 +1,7 @@
 <template>
-<v-card-title primary-title>
-  <div>
-    <h3 class="headline mb-0">{{ title }}</h3>
-  </div>
-</v-card-title>
+<div class="title">
+  {{ title }}
+</div>
 </template>
 
 <script lang="ts">
@@ -16,4 +14,8 @@ export default class Title extends Vue {
 </script>
 
 <style scoped lang="scss">
+.title {
+  font-size: 14px;
+  margin: 10px 0 20px 0;
+}
 </style>
