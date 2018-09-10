@@ -7,12 +7,13 @@
     color="accent"
     slider-color="primary"
     class="genres"
+    @input="updateSelectedGenre"
   >
     <v-tab
-      v-for="n in 7"
-      :key="n"
+      v-for="(genre, i) in genres"
+      :key="i"
     >
-      Item {{ n }}
+      {{ genre }}
     </v-tab>
   </v-tabs>
 </div>
@@ -20,10 +21,18 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Action } from 'vuex-class';
 
 @Component
 export default class Genres extends Vue {
   active: number = 0;
+  genres: string[] = ['ALL GENRES', 'RPG', 'SHOOTER', 'SPORTS', 'STRATEGY', 'ADVENTURE', 'RACING'];
+
+  @Action('callUpdateSelectedGenre') callUpdateSelectedGenre: any;
+
+  updateSelectedGenre() {
+    this.callUpdateSelectedGenre(this.genres[this.active]);
+  }
 }
 </script>
 

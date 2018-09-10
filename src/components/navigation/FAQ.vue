@@ -7,7 +7,7 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
-import { Getter, Action, Mutation } from 'vuex-class';
+import { Action } from 'vuex-class';
 
 @Component
 export default class Login extends Vue {
